@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sedgwick+Ave+Display&family=Sen&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #37393e; 
+	
+	/*background: #121212;*/
+	/*background: #122A4D;*/
+}
+
+header {
+	margin-top: 5%;
+	margin-bottom: 3%;
+	display: flex;
+}
+
+.logo h1{
+	margin-left: 3%;
+	font-family: 'Sedgwick Ave Display', cursive;
+	color: #e5e5e5;
+	font-size: 48px;
+
+}
+.buttons {
+	text-align: right;
+}
+.buttons button {
+	text-align: center;
+	padding: 7px 0px;
+	margin-right: 3%;
+	width: 120px;
+	/*height: 20px;*/
+	outline: none;
+	border-radius: 20px;
+	font-family: 'Sen', sans-serif;
+	border: none;
+	letter-spacing: .5px;
+
+}
+.buttons button:focus {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+#signup {
+	background: transparent;
+	border: 1px solid #e5e5e5;
+	box-shadow: none;
+	outline: none;
+}
+
+#login {
+	background: #FCD865; 
+	/*background: #3087EC;*/
+	box-shadow: none;
+	color: #222222;
+	outline: none;
+}
+
+.img1 {
+	height: auto;
+	text-align: center;
+	/*background: blue;*/
+	margin-left: -3%;
+}
+.img1 img {
+	padding: 0px 65px;
+	width: 90%;
+	height: 370px;
+}
+.desc1 {
+	margin-left: -4%;
+	height: auto;
+}
+.desc1 .card {
+	background: #222222; 
+	/*background: #262626;*/
+	/*color: #ffffff;*/
+	padding: 20px;
+	color: #e5e5e5;
+	margin-top: 2.5%;
+	border-radius: 20px;
+}
+.desc1 .card h3 {
+	font-family: 'Secular One', sans-serif;
+}
+.desc1 .card p {
+	font-family: 'Sen', sans-serif;
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+	.desc1 .card{
+		margin-top: 5%;
+	}
+} 
+
+@media only screen and (max-width: 1201px) {
+	.desc1 .card{
+		padding: 20px;
+		margin-top: -4.5%;
+	}
+} 
+
+@media only screen and (max-width: 1090px) {
+	.desc1 .card{
+		padding: 20px;
+		margin-top: -1%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.img1 {
+		width: 100%;
+	}
+	.desc1 .card{
+		padding: 20px;
+		margin-top: -1%;
+	}
+}
+
+
+
+
+
+
+
+
+

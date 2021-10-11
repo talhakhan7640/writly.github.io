@@ -1,0 +1,43 @@
+{% extends "users/base.html" %}
+{% block title %} index {% endblock %}
+{% load static %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+{% endblock %}
+
+{% block accounts%}
+			<div class="row">
+				<div class="logo col-xl-6 col-lg-6 col-md-6">
+					<h1>Writly</h1>
+				</div>
+				<div class="buttons col-xl-6 col-lg-6 col-md-6 mt-2">
+					<button class="btn btn-primary" id="signup" type="submit" onclick="openSignupForm()">Signup</button>
+
+
+					<div class="container popup center">
+						<span class="close" id="close">&times;</span>
+						<div class="title">
+							Signup!
+						</div>
+						<div class="signup-form">
+							<form method="POST" action="">
+								{% csrf_token %}
+								{{ signup_form }}
+								<button type="submit" class="btn btn-primary">Continue</button>
+							</form>
+						</div>
+					</div>
+
+					<button class="btn btn-primary" id="login" type="submit">Login</button>
+				</div>
+			</div>
+
+{% endblock %}
+
+
+<script type="text/javascript" src="{% static 'js/signup.js' %}">
+
+</script>
